@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алексей Зобнин | Олимпия SPORT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f8f9fa; color: #333; line-height: 1.5; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; padding: 30px 15px 20px; margin-bottom: 20px; position: relative; }
+        .logo { font-size: 2.5rem; font-weight: 900; color: #111; margin-bottom: 10px; line-height: 1.1; }
+        .logo span { color: #00c853; }
+        .home-btn, .nav-btn {
+            background: #00c853; color: white; border: none; border-radius: 50px; padding: 10px 20px;
+            font-size: 0.9rem; font-weight: 700; cursor: pointer; text-decoration: none;
+            display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0, 200, 83, 0.3); margin: 5px;
+        }
+        .home-btn:hover, .nav-btn:hover { background: #00b347; transform: translateY(-2px); }
+        .trainer-profile { background: white; border-radius: 20px; padding: 40px; margin-top: 20px; border-top: 8px solid #00c853; }
+        .profile-header { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; margin-bottom: 40px; }
+        .profile-photo { flex: 0 0 250px; }
+        .profile-photo img { width: 100%; max-width: 250px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .profile-info { flex: 1; min-width: 300px; }
+        .trainer-name { font-size: 2.5rem; font-weight: 900; color: #111; margin-bottom: 10px; }
+        .trainer-title { color: #00c853; font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; }
+        .trainer-bio { font-size: 1.1rem; line-height: 1.7; color: #444; margin-bottom: 30px; }
+        .contact-buttons { display: flex; flex-wrap: wrap; gap: 15px; margin: 30px 0; }
+        .contact-btn {
+            background: #f0f0f0; border-radius: 50px; padding: 12px 25px; border: none;
+            font-weight: 600; color: #555; cursor: pointer; text-decoration: none;
+            display: inline-flex; align-items: center; gap: 10px; transition: all 0.2s ease;
+        }
+        .contact-btn.primary { background: #00c853; color: white; }
+        .contact-btn:hover { background: #00b347; color: white; transform: translateY(-2px); }
+        .details-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin: 40px 0; }
+        .detail-card { background: #f9f9f9; padding: 25px; border-radius: 15px; border-left: 5px solid #00c853; }
+        .detail-title { color: #00c853; font-weight: 700; font-size: 1.2rem; margin-bottom: 15px; }
+        .footer { text-align: center; padding: 40px 15px; color: #666; margin-top: 60px; border-top: 2px solid #eee; }
+        @media (max-width: 768px) {
+            .container { padding: 15px; }
+            .profile-header { flex-direction: column; text-align: center; gap: 30px; }
+            .profile-photo { flex: 0 0 auto; }
+            .trainer-name { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../index.html" class="home-btn">
+                <i class="fas fa-home"></i> Главная клуба
+            </a>
+            <a href="../trainers.html" class="nav-btn">
+                <i class="fas fa-users"></i> Все тренеры
+            </a>
+            <h1 class="logo">ЛИЧНЫЙ <span>ПРОФИЛЬ</span></h1>
+        </header>
+
+        <div class="trainer-profile">
+            <div class="profile-header">
+                <div class="profile-photo">
+                    <img src="../photos/ZobninAleksey.jpg" alt="Алексей Зобнин" class="trainer-photo">
+                </div>
+                <div class="profile-info">
+                    <h1 class="trainer-name">АЛЕКСЕЙ ЗОБНИН</h1>
+                    <p class="trainer-title">ЭКСПЕРТ ПО ПАУЭРЛИФТИНГУ | СТАЖ 5   ЛЕТ</p>
+                    <p class="trainer-bio">
+                         Сертифицированный тренер по пауэрлифтингу. <strong>Обладатель звания «Мастер спорта» по пауэрлифтингу</strong>. За 5 лет тренерской практики я убедился: <strong>сила строится на трех столпах</strong> — технической точности, дисциплине движения и упорном движении к личной цели. Я не просто учу поднимать вес — я помогаю строить систему, где каждая тренировка имеет четкую цель, а каждый подход приближает к вашему рекорду.
+                    </p>
+                    
+                    <div class="contact-buttons">
+			<a href="tel:+79092487621" class="contact-btn primary">
+        			<i class="fas fa-phone-alt"></i> Позвонить тренеру
+    			</a>
+
+                        <a href="https://vk.com/id690548688" target="_blank" class="contact-btn">
+                            <i class="fab fa-vk"></i> Страница ВКонтакте
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3 class="detail-title"><i class="fas fa-graduation-cap"></i> Образование и сертификаты</h3>
+                    <ul>
+                        <li>Диплом НЦРДО г. Москва</li>
+                        <li>Сертифицированный тренер по пауэрлифтингу (IPA)</li>
+                        
+                    </ul>
+                </div>
+                <div class="detail-card">
+                    <h3 class="detail-title"><i class="fas fa-dumbbell"></i> Направления работы</h3>
+                    <ul>
+                        <li>Силовой и функциональный тренинги, направленные на развитие силы и мышечной массы тела</li>
+                        <li>Подготовка к соревнованиям по пауэрлифтингу и отдельным движениям</li>
+                    </ul>
+                </div>
+                <div class="detail-card">
+                    <h3 class="detail-title"><i class="fas fa-calendar-alt"></i> Расписание и запись</h3>
+                    <p><strong>Индивидуальные тренировки:</strong> Пн-Вс — с 9:00 до 21:00</p>
+                </div>
+                <div class="detail-card">
+                    <h3 class="detail-title"><i class="fas fa-star"></i> Достижения</h3>
+                    <ul>
+                        <li>Мастер спорта по пауэрлифтингу</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 30px; background: #f0fff4; border-radius: 15px;">
+                <h3 style="color: #00c853; margin-bottom: 20px;">Готовы изменить свое тело?</h3>
+                <p style="margin-bottom: 25px; font-size: 1.1rem;">Запишитесь на <strong>бесплатную консультацию и пробную тренировку</strong>. 
+                Обсудим ваши цели и составим индивидуальный план.</p>
+                <a href="tel:+74932939919" target="_blank" class="contact-btn primary" style="padding: 15px 30px; font-size: 1.1rem;">
+                    <i class="fas fa-phone-alt"></i> Получить бесплатную консультацию
+                </a>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div style="margin-bottom: 20px;">
+                <a href="../index.html" class="nav-btn"><i class="fas fa-home"></i> На главную клуба</a>
+                <a href="../trainers.html" class="nav-btn"><i class="fas fa-users"></i> Все тренеры</a>
+            </div>
+            <p>© Олимпия SPORT. Личная страница тренера.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; color: #888;">Для связи с администрацией клуба: 8 (4932) 93-99-19</p>
+        </div>
+    </div>
+</body>
+</html>
